@@ -1,0 +1,452 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#f5e9e1">
+<title>Bobby & Mrunal — Engagement Invitation</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Great+Vibes&family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ivory:#f7eee7; --ivory2:#fffaf5; --pink:#e7b4b2; --pink2:#f1cfca;
+  --rose:#a95759; --deep:#6d3b40; --gold:#b18a4a; --ink:#302735;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:#2c2023;color:var(--ink);font-family:"Cormorant Garamond",serif}
+.invite{max-width:760px;margin:auto;background:var(--ivory);overflow:hidden;box-shadow:0 0 60px #0005}
+section{position:relative;padding:76px 26px;text-align:center;overflow:hidden}
+.script{font-family:"Great Vibes",cursive}.serif{font-family:"Cormorant Garamond",serif}
+.sans{font-family:Montserrat,sans-serif}.gold{color:var(--gold)}
+.smallcaps{font:500 10px/1.8 Montserrat,sans-serif;letter-spacing:3px;text-transform:uppercase}
+.orn{color:var(--gold);font-size:25px;letter-spacing:8px}
+.divider{width:130px;height:1px;background:#b18a4a66;margin:26px auto;position:relative}
+.divider:after{content:"♥";position:absolute;left:50%;top:-10px;transform:translateX(-50%);background:var(--ivory);padding:0 10px;color:var(--rose);font-size:13px}
+
+/* OPENING CARD */
+.opening{
+  height:100svh;min-height:650px;padding:0;background:
+  radial-gradient(circle at 50% 38%,#fff9f4 0 22%,transparent 48%),
+  linear-gradient(135deg,#e9bdb9,#f7e9df 48%,#e3b0ae);
+  perspective:1800px;display:flex;align-items:center;justify-content:center;
+}
+.opening:before{
+ content:"";position:absolute;inset:0;
+ background:
+ radial-gradient(circle at 8% 12%,#fff 0 2px,transparent 3px),
+ radial-gradient(circle at 92% 20%,#fff 0 2px,transparent 3px),
+ radial-gradient(circle at 14% 84%,#fff 0 2px,transparent 3px),
+ radial-gradient(circle at 84% 78%,#fff 0 2px,transparent 3px);
+ opacity:.65;
+}
+.card-wrap{
+ width:min(88vw,570px);height:min(72svh,700px);position:relative;
+ cursor:pointer;transform-style:preserve-3d;touch-action:manipulation;user-select:none;-webkit-tap-highlight-color:transparent;
+ filter:drop-shadow(0 25px 30px #6d3b4040);
+}
+.card-inside{
+ position:absolute;inset:0;border-radius:4px;
+ background:
+ linear-gradient(#ffffffaa,#ffffffaa),
+ repeating-linear-gradient(0deg,transparent 0 4px,#d9bba122 5px 6px),
+ var(--ivory2);
+ border:1px solid #b18a4a66;
+ display:flex;align-items:center;justify-content:center;
+ box-shadow:inset 0 0 50px #b18a4a18;
+}
+.inside-content{padding:38px 30px;max-width:470px}
+.inside-content .monogram{font-size:78px;color:var(--gold);line-height:.8}
+.inside-content h2{font-size:34px;font-weight:500;color:var(--deep);margin:15px 0}
+.inside-content .script{font-size:48px;color:var(--rose)}
+.inside-content p{font-size:19px;line-height:1.4}
+.cover-left,.cover-right{
+ position:absolute;top:0;width:50%;height:100%;z-index:5;
+ background:
+ linear-gradient(#fff8f288,#fff8f288),
+ repeating-linear-gradient(0deg,transparent 0 5px,#c49d7712 6px 7px),
+ var(--ivory);
+ border:1px solid #b18a4a77;
+ transform-style:preserve-3d;
+ transition:transform 1.2s cubic-bezier(.7,0,.2,1);will-change:transform;
+ backface-visibility:hidden;
+}
+.cover-left{left:0;transform-origin:left center;border-right:0}
+.cover-right{right:0;transform-origin:right center;border-left:0}
+.cover-left:after,.cover-right:after{
+ content:"";position:absolute;inset:16px;border:1px solid #b18a4a66;pointer-events:none
+}
+.cover-left{background:
+ radial-gradient(ellipse at 40% 20%,#eab5b266,transparent 25%),
+ var(--ivory)}
+.cover-right{background:
+ radial-gradient(ellipse at 60% 80%,#eab5b266,transparent 25%),
+ var(--ivory)}
+.cover-content{
+ position:absolute;inset:0;display:flex;align-items:center;justify-content:center;
+ flex-direction:column;padding:30px;text-align:center;z-index:2
+}
+.cover-content .monogram{font-size:88px;color:var(--gold);line-height:.85}
+.cover-content .title{font-size:16px;letter-spacing:4px;color:var(--deep);margin-top:18px}
+.cover-content .script{font-size:50px;color:var(--rose);margin:12px 0}
+.flower{position:absolute;color:#d28f91;font-size:38px;opacity:.85}
+.f1{top:8%;left:9%}.f2{bottom:9%;right:10%}.f3{top:12%;right:8%;font-size:28px}.f4{bottom:12%;left:8%;font-size:30px}
+.ribbon{
+ position:absolute;bottom:13%;left:50%;transform:translateX(-50%);width:130%;height:54px;
+ background:linear-gradient(#e9b7b3,#d99598);box-shadow:0 4px 8px #6d3b4022;z-index:3
+}
+.ribbon:before,.ribbon:after{content:"";position:absolute;top:4px;width:62px;height:70px;background:#d89598;z-index:-1}
+.ribbon:before{left:7%;transform:rotate(32deg);clip-path:polygon(0 0,100% 15%,70% 100%,40% 65%)}
+.ribbon:after{right:7%;transform:rotate(-32deg);clip-path:polygon(0 15%,100% 0,60% 65%,30% 100%)}
+.seal{
+ position:absolute;bottom:calc(13% + 4px);left:50%;transform:translate(-50%,50%);
+ width:72px;height:72px;border-radius:50%;background:#fff3ec;border:2px solid var(--gold);
+ display:flex;align-items:center;justify-content:center;color:var(--rose);font-size:28px;z-index:10;
+ box-shadow:0 5px 12px #6d3b4030
+}
+.opening.open .cover-left{transform:perspective(1800px) rotateY(-115deg)}
+.opening.open .cover-right{transform:perspective(1800px) rotateY(115deg)}
+.opening.open .seal{opacity:0;transition:opacity .3s .25s}
+.opening.open .ribbon{opacity:0;transition:opacity .25s}
+.opening.open .card-wrap{cursor:default}
+.open-hint{
+ position:absolute;bottom:4.5%;left:50%;transform:translateX(-50%);z-index:30;
+ width:88%;text-align:center;padding:10px 12px;border-radius:999px;
+ color:#fffaf5;background:#6d3b408c;border:1px solid #fffaf566;
+ font:500 10px Montserrat,sans-serif;letter-spacing:2.5px;text-transform:uppercase;
+ text-shadow:0 1px 4px #6d3b40;pointer-events:none;
+ transition:opacity .3s ease
+}
+.opening.open .open-hint{opacity:0}
+@media(max-width:520px){
+ .opening{min-height:100svh}
+ .card-wrap{width:88vw;height:min(70svh,620px);min-height:480px}
+ .cover-content{padding:22px}
+ .cover-content .monogram{font-size:72px}.cover-content .script{font-size:43px}
+ .open-hint{bottom:3.5%;font-size:9px;letter-spacing:2px}
+}
+
+/* CONTENT */
+.hero{
+ background:
+ radial-gradient(circle at 50% 20%,#fff9f4 0 20%,transparent 45%),
+ linear-gradient(#f8eee8,#f1deda);
+}
+.hero:before,.hero:after{
+ content:"";position:absolute;width:260px;height:420px;top:-70px;border:1px solid #b18a4a33;border-radius:50%;opacity:.6
+}
+.hero:before{left:-170px;transform:rotate(25deg)}.hero:after{right:-170px;transform:rotate(-25deg)}
+.hero h1{font-size:64px;line-height:.9;font-weight:500;color:var(--rose);margin:17px 0}
+.hero .amp{font-size:31px;color:var(--gold);display:block;margin:7px}
+.hero p{font-size:21px;line-height:1.45;max-width:570px;margin:12px auto}
+.family{font-size:18px;line-height:1.45;color:#765b50}
+.family b{color:var(--deep)}
+.countdown{background:#f2d9d5}
+.countdown h2,.venue h2,.rsvp h2,.story h2{font-size:45px;font-weight:500;color:var(--deep);margin:12px}
+.clock{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;max-width:580px;margin:25px auto}
+.unit{padding:15px 4px;border-top:1px solid #b18a4a66;border-bottom:1px solid #b18a4a66}
+.unit b{display:block;font-size:34px;color:var(--rose)}.unit span{font:9px Montserrat,sans-serif;letter-spacing:1.5px;text-transform:uppercase;color:#765b50}
+.story{background:#fff8f2}
+.story p{max-width:560px;margin:16px auto;font-size:23px;line-height:1.45}
+.quote{font-size:34px!important;color:var(--rose);max-width:520px!important}
+.events{background:linear-gradient(#f7eee8,#edd1cd)}
+.event-card{max-width:600px;margin:auto;border:1px solid #b18a4a55;background:#fffaf580;padding:32px 24px}
+.event{padding:17px 0;border-bottom:1px solid #b18a4a33}.event:last-child{border:0}
+.event .icon{font-size:24px;color:var(--gold)}.event h3{font-size:31px;font-weight:500;color:var(--deep);margin:5px}
+.event p{font-size:19px;line-height:1.35;margin:5px}
+.venue{background:#fff8f2}.venue-name{font-size:34px;color:var(--rose);margin:16px}
+.address{font-size:20px;line-height:1.45;max-width:520px;margin:auto}
+.map{display:inline-block;margin-top:24px;padding:12px 20px;border:1px solid var(--gold);color:var(--deep);text-decoration:none;font:600 10px Montserrat,sans-serif;letter-spacing:2px;text-transform:uppercase}
+
+.gallery{background:#fff8f2}
+.gallery h2{margin:12px}
+.photo-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px;max-width:650px;margin:28px auto 0}
+.photo-grid figure{margin:0;overflow:hidden;border:1px solid #b18a4a55;background:#fff;padding:7px;box-shadow:0 10px 25px #70424718}
+.photo-grid img{display:block;width:100%;height:390px;object-fit:cover}
+@media(max-width:560px){.photo-grid{grid-template-columns:1fr}.photo-grid img{height:auto;max-height:560px;object-fit:cover}}
+
+.dress{background:#704247;color:#fff8f2}
+.dress h2{font-size:46px;font-weight:500}.dress p{font-size:23px;line-height:1.45;max-width:510px;margin:auto}.dress .script{font-size:60px;color:#f0c5bd;margin-top:15px}
+.gift{background:#f2ddd8}.gift p{font-size:24px;line-height:1.45;max-width:540px;margin:18px auto;color:#704247}
+.rsvp{background:#fff8f2}.phone{font:600 17px Montserrat,sans-serif;line-height:1.8}.phone a{color:var(--rose)}
+.footer{background:#6d3b40;color:#fff8f2;padding:62px 25px}.footer .script{font-size:55px;color:#f0c5bd}.footer p{font-size:20px;margin:8px}
+.music{position:fixed;right:18px;bottom:18px;z-index:20;width:48px;height:48px;border-radius:50%;border:1px solid var(--gold);background:#fff8f2;color:var(--rose);cursor:pointer;box-shadow:0 5px 18px #0003}
+.fade{opacity:0;transform:translateY(20px);transition:.8s ease}.fade.show{opacity:1;transform:none}
+
+/* ===== MOBILE OPENING CARD FIX ===== */
+@media (max-width: 600px) {
+  html, body {
+    width: 100%;
+    min-height: 100%;
+    overflow-x: hidden;
+  }
+
+  body {
+    min-height: 100svh;
+  }
+
+  .opening {
+    position: fixed !important;
+    inset: 0 !important;
+    width: 100vw !important;
+    height: 100svh !important;
+    min-height: 0 !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    padding: 18px !important;
+    box-sizing: border-box !important;
+    z-index: 9999 !important;
+    overflow: hidden !important;
+  }
+
+  .opening-card,
+  .card,
+  .invitation-card {
+    width: min(88vw, 390px) !important;
+    height: min(78svh, 610px) !important;
+    max-width: 390px !important;
+    max-height: 610px !important;
+    min-height: 0 !important;
+    margin: 0 auto !important;
+    position: relative !important;
+    box-sizing: border-box !important;
+  }
+
+  .cover-left,
+  .cover-right {
+    height: 100% !important;
+    min-height: 0 !important;
+  }
+
+  /* Keep the hint physically inside the card */
+  .tap-hint {
+    position: absolute !important;
+    left: 50% !important;
+    bottom: 22px !important;
+    transform: translateX(-50%) !important;
+    width: calc(100% - 36px) !important;
+    text-align: center !important;
+    z-index: 20 !important;
+    margin: 0 !important;
+    pointer-events: none !important;
+  }
+
+  .opening-card .tap-hint,
+  .card .tap-hint,
+  .invitation-card .tap-hint {
+    display: block !important;
+  }
+
+  .opening-card * ,
+  .card * ,
+  .invitation-card * {
+    max-width: 100%;
+  }
+}
+
+/* iPhone Safari: use dynamic viewport height */
+@supports (height: 100dvh) {
+  @media (max-width: 600px) {
+    .opening {
+      height: 100dvh !important;
+    }
+  }
+}
+
+</style>
+</head>
+<body>
+<main class="invite">
+
+<section class="opening" id="opening" aria-label="Open invitation">
+  <div class="card-wrap" id="card">
+    <div class="card-inside">
+      <div class="inside-content">
+        <div class="orn">✦ ❦ ✦</div>
+        <div class="monogram script">B &amp; M</div>
+        <h2>A Beautiful Chapter Begins</h2>
+        <div class="script">Bobby &amp; Mrunal</div>
+        <p>20 September 2026<br>6 PM onwards</p>
+        <div class="orn">❦</div>
+      </div>
+    </div>
+
+    <div class="cover-left">
+      <span class="flower f1">✿</span><span class="flower f4">❀</span>
+      <div class="cover-content">
+        <div class="smallcaps">Engagement</div>
+        <div class="monogram script">B</div>
+      </div>
+    </div>
+    <div class="cover-right">
+      <span class="flower f2">✿</span><span class="flower f3">❀</span>
+      <div class="cover-content">
+        <div class="smallcaps">Invitation</div>
+        <div class="monogram script">M</div>
+      </div>
+    </div>
+    <div class="ribbon"></div>
+    <div class="seal">♥</div>
+    <div class="open-hint">TAP THE CARD TO OPEN</div>
+  </div>
+</section>
+
+<section class="hero fade">
+  <div class="orn">❦ ✦ ❦</div>
+  <div class="smallcaps">Together with their families</div>
+  <p>request the pleasure of your company as they celebrate the engagement of</p>
+  <h1 class="script">Bobby Kolhatkar <span class="amp">&amp;</span> Mrunal Gajbhiye</h1>
+  <div class="family">
+    <b>Daughter of</b><br>Mr. Kishor &amp; Mrs. Revati Kolhatkar
+    <br><br>
+    <b>Son of</b><br>Mr. Mayur &amp; Mrs. Sheetal Gajbhiye
+  </div>
+  <div class="divider"></div>
+  <p>As they begin a beautiful new life journey together.</p>
+</section>
+
+<section class="countdown fade">
+  <div class="orn">✦</div>
+  <h2>Counting Down</h2>
+  <div class="clock">
+    <div class="unit"><b id="days">--</b><span>Days</span></div>
+    <div class="unit"><b id="hours">--</b><span>Hours</span></div>
+    <div class="unit"><b id="mins">--</b><span>Minutes</span></div>
+    <div class="unit"><b id="secs">--</b><span>Seconds</span></div>
+  </div>
+</section>
+
+<section class="story fade">
+  <div class="smallcaps">A Note from the Families</div>
+  <h2>A Love Written in the Stars</h2>
+  <div class="divider"></div>
+  <p class="quote script">“A love written in the stars, meant to last forever.”</p>
+  <p>As Bobby and Mrunal begin this beautiful new life journey together, your presence and blessings will make their celebration even more special.</p>
+</section>
+
+<section class="events fade">
+  <div class="smallcaps">Save the Evening</div>
+  <h2 style="font-size:45px;font-weight:500;color:#704247">The Celebration</h2>
+  <div class="event-card">
+    <div class="event">
+      <div class="icon">♡</div>
+      <h3>Engagement</h3>
+      <p>Sunday, 20th September 2026</p>
+      <p><b>6:00 PM onwards</b></p>
+    </div>
+    <div class="event">
+      <div class="icon">❦</div>
+      <h3>Venue</h3>
+      <p>Millennium Banquet</p>
+      <p>1st Floor, Centre Point Hotel Ramdaspeth, Nagpur</p>
+    </div>
+  </div>
+</section>
+
+<section class="venue fade">
+  <div class="smallcaps">Where We Gather</div>
+  <h2>Our Venue</h2>
+  <div class="divider"></div>
+  <div class="venue-name">Millennium Banquet</div>
+  <div class="address">1st Floor,<br>Centre Point Hotel Ramdaspeth,<br>Nagpur, Maharashtra</div>
+  <a class="map" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Centre+Point+Hotel+Ramdaspeth+Nagpur">View on Google Maps</a>
+</section>
+
+
+<section class="gallery fade">
+  <div class="smallcaps">A Few Moments of Us</div>
+  <h2 style="font-size:45px;font-weight:500;color:#704247">Our Story</h2>
+  <div class="divider"></div>
+  <div class="photo-grid">
+    <figure><img src="assets/couple-1.jpeg" alt="Bobby and Mrunal"></figure>
+    <figure><img src="assets/couple-2.jpeg" alt="Bobby and Mrunal"></figure>
+  </div>
+</section>
+
+<section class="dress fade">
+  <div class="orn" style="color:#e9c77a">✦</div>
+  <h2>Dress Code</h2>
+  <p>Come dressed for a glamorous evening of love, laughter and celebration.</p>
+  <div class="script">Glamour</div>
+</section>
+
+<section class="gift fade">
+  <div class="smallcaps">A Little Note</div>
+  <p class="script" style="font-size:42px;color:#a95759">Your presence is our greatest gift.</p>
+  <p>With love in our hearts and stars in our eyes, we cannot wait to celebrate this beautiful beginning with you.</p>
+</section>
+
+<section class="rsvp fade">
+  <div class="smallcaps">Kindly Respond</div>
+  <h2>RSVP</h2>
+  <div class="divider"></div>
+  <p style="font-size:22px">We would be delighted to have you with us!</p>
+  <div class="phone">RSVP — Nishita Gajbhiye<br><a href="tel:+918767329269">87673 29269</a></div>
+</section>
+
+<section class="footer">
+  <div class="script">With Love</div>
+  <p>Bobby &amp; Mrunal</p>
+  <p>Kolhatkar &amp; Gajbhiye Families</p>
+  <p style="font-size:14px;letter-spacing:2px">20 • 09 • 2026</p>
+</section>
+
+</main>
+
+<audio id="music" preload="auto" loop>
+  <source src="assets/ehsaas.mp3" type="audio/mpeg">
+</audio>
+<button class="music" id="musicBtn" aria-label="Play HIM & I music" title="HIM & I">♫</button>
+
+<script>
+const opening=document.getElementById("opening");
+const card=document.getElementById("card");
+const audio=document.getElementById("music");
+const musicBtn=document.getElementById("musicBtn");
+let opened=false;
+
+async function openCard(){
+  if(opened)return;
+  opened=true;
+  opening.classList.add("open");
+  document.querySelector(".open-hint").textContent="";
+  try{
+    await audio.play();
+    musicBtn.textContent="❚❚";
+  }catch(e){
+    musicBtn.textContent="♫";
+  }
+}
+
+// Use both click and pointer/touch-safe handling so the card opens reliably on iPhone/Android.
+card.addEventListener("pointerup",openCard,{passive:true});
+card.addEventListener("click",openCard);
+card.addEventListener("keydown",e=>{if(e.key==="Enter"||e.key===" "){e.preventDefault();openCard()}});
+card.tabIndex=0;
+
+const target=new Date("2026-09-20T18:00:00+05:30").getTime();
+function tick(){
+ const d=Math.max(0,target-Date.now()),s=Math.floor(d/1000);
+ document.getElementById("days").textContent=Math.floor(s/86400);
+ document.getElementById("hours").textContent=String(Math.floor(s%86400/3600)).padStart(2,"0");
+ document.getElementById("mins").textContent=String(Math.floor(s%3600/60)).padStart(2,"0");
+ document.getElementById("secs").textContent=String(s%60).padStart(2,"0");
+}
+tick();setInterval(tick,1000);
+
+musicBtn.onclick=async()=>{
+  if(audio.paused){
+    try{await audio.play();musicBtn.textContent="❚❚"}catch(e){}
+  }else{
+    audio.pause();musicBtn.textContent="♫";
+  }
+};
+audio.addEventListener("error",()=>{musicBtn.textContent="♫"});
+
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting)e.target.classList.add("show")}),{threshold:.12});
+document.querySelectorAll(".fade").forEach(x=>io.observe(x));
+</script>
+</body>
+</html>
